@@ -1,5 +1,3 @@
-import ErroItem from "./ErroItem"
-
 const AddToDo = (props) => {
 	const {onAdd,inputText,setInputText,setError,error} = props
 
