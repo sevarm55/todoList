@@ -3,6 +3,7 @@ import AddToDo from './AddToDo'
 import List from './List'
 
 const ToDoList = () => {
+    const [error, setError] = useState('')
 	const [inputText,setInputText] = useState('')
     const [todos, setTodos] = useState([
         {id: 101, text: 'hello world', completed: false},
@@ -30,6 +31,8 @@ const ToDoList = () => {
             onAdd={addTodo}
             inputText={inputText}
             setInputText={setInputText}
+            setError={setError}
+            error={error}
         />
         <List
             todos={todos}

@@ -17,6 +17,11 @@
 .form_block {
   display: flex;
   gap: 20px;
+  position: relative;
+}
+
+.error::placeholder {
+ color: red;
 }
 
 .form_block input {
@@ -84,4 +89,8 @@
 
 .actions button:hover {
   color: rgb(0, 0, 0);
+}
+
+.error {
+  color: red;
 }
